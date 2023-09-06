@@ -1,7 +1,7 @@
 {
   "vendor": "ssesandbox04",
   "name": "demo-warning",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "title": "Demo Warning",
   "description": "Provides an attention warning to be placed next to demo components",
   "builders": {
