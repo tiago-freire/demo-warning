@@ -1,4 +1,3 @@
 {
-  "admin/test": "teste",
-  "store/test": "teste"
+  "store/demo-warning": "¡Atención! Este es un componente creado con fines de demostración. Su mantenimiento no cuenta con soporte oficial de VTEX."
 }
