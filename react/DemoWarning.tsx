@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { defineMessages, useIntl } from 'react-intl'
 
 const messages = defineMessages({
@@ -7,7 +7,11 @@ const messages = defineMessages({
   },
 })
 
-const DemoWarning: FC = () => {
+interface Props {
+  message?: string
+}
+
+const DemoWarning = ({ message }: Props) => {
   const intl = useIntl()
 
   return (
@@ -27,9 +31,22 @@ const DemoWarning: FC = () => {
           fill="currentColor"
         />
       </svg>
-      <span className="ml2">{intl.formatMessage(messages.demoWarning)}</span>
+      <span className="ml2">
+        {message?.trim() ? message : intl.formatMessage(messages.demoWarning)}
+      </span>
     </div>
   )
+}
+
+DemoWarning.schema = {
+  title: 'admin/editor.demo-warning.title',
+  type: 'object',
+  properties: {
+    message: {
+      type: 'string',
+      title: 'admin/editor.demo-warning.message',
+    },
+  },
 }
 
 export default DemoWarning

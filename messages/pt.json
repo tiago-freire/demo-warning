@@ -1,3 +1,5 @@
 {
+  "admin/editor.demo-warning.title": "Aviso de Demonstração",
+  "admin/editor.demo-warning.message": "Mensagem",
   "store/demo-warning": "Atenção! Este é um componente criado para fins de demonstração. Sua manutenção não é suportada oficialmente pela VTEX."
 }
